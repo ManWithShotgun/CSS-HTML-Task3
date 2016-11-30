@@ -22,9 +22,11 @@ body{
   /*93% because scroll with small content*/
   position: relative;
   padding-bottom: 63px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 6px #ccc;
+  -moz-box-shadow: 0px 0px 6px #ccc;
+  box-shadow: 0px 0px 6px #ccc;
 }
 .top-bar{
   margin: auto;
@@ -220,7 +222,7 @@ ul > li:first-child a:before{
   color: red;
 }
 .bag-bascket{
-  display: none;/*set block for show*/
+  display: none;
   position: absolute;
   top: 50px;
   z-index: 2;
@@ -232,6 +234,9 @@ ul > li:first-child a:before{
   width: 415px;
   height: auto;
   padding: 15px 0 15px 15px;
+}
+.menu-bascket:hover .bag-bascket{
+  display: block;
 }
 .item-box{
   border-radius: 4px;
